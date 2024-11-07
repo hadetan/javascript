@@ -64,6 +64,54 @@ numbers.sort((x, y) => {
 // console.log(newFruit);
 // console.log(fruits);
 
-fruits.forEach((value, index) => {
-	console.log(value, index);
-});
+// fruits.forEach((value, index) => {
+// 	console.log(value, index);
+// });
+
+let userData = {
+	name: 'Aquib',
+	age: 22,
+	country: 'India',
+};
+
+//modifying object
+userData.name = 'Dilal';
+userData.age = 20;
+
+//adding new field in object
+userData.city = 'Assam';
+
+//deleting field in object
+delete userData.age;
+
+// console.log(userData);
+
+// console.log(userData.name);
+
+//for in loop for objects
+
+// for (let x in userData) {
+// 	console.log(x, userData[x]);
+// }
+
+let arr2 = ["aquib", "dilal"];
+
+//for in running in array
+
+// for (let x in arr2) {
+// 	console.log(x, arr2[x]);
+// }
+
+//for of loop for arrays
+
+// for (let i of arr2) {
+// 	console.log(i);
+// }
+
+// arr2.forEach((value, index) => {
+
+// })
+
+// for (initiating variable; condition; iteration) {
+// 	logic
+// }

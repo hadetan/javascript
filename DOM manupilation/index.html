@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>HTML DOM Selector By ID Example</title>
+	</head>
+	<body>
+		<p id="demo">Hello World!</p>
+		<p class="demoClass">second p tag</p>
+		<h1 class="demoClass">h1 tag</h1>
+
+		<script>
+			let element = document.getElementById('demo');
+			console.log(element);
+			let element2 = document.getElementsByClassName('demoClass');
+			console.log(element2[1].innerHTML);
+
+			let tag = document.getElementsByTagName('p');
+			console.log(tag[0].innerHTML);
+
+			let selector = document.querySelector('.demoClass');
+			console.log(selector.innerHTML);
+
+			element.innerHTML = 'not hello world now';
+			element.style.backgroundColor = 'black';
+			element.style.color = 'white';
+			element.style.border = '1px solid red';
+
+			element.addEventListener('mouseover', () => {
+				element.style.color = 'red';
+			});
+
+			element.addEventListener('click', (event) => {
+				console.log(event.y);
+			});
+
+			// function addeventlistner(event, callback) {
+			//   //event
+			//   callback();
+			// }
+		</script>
+	</body>
+</html>
