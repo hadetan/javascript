@@ -1,6 +1,6 @@
 // const names = ["aquib", "dilal", "priyanka", "chandra"];
 
-// // const [n1, n2, n3, n4] = names;
+// const [n1, n2, n3, n4] = names;
 // const [, n1, , n2] = names;
 
 // console.log(n1, n2);
@@ -16,7 +16,7 @@
 const arr = [1, 2, 3, 4, 5, 6, 7, 8];
 
 //rest
-let [n1, n2, ...newVar] = arr;
+// let [n1, n2, ...newVar] = arr;
 
 // console.log(n1, n2);
 // console.log(newVar);
