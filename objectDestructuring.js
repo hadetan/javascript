@@ -15,17 +15,17 @@ const obj = {
 
 //destructuring nested object
 const userData = {
-    name: 'Aquib',
-    age: 22,
-    isAlive: true,
-    address: {
-        country: 'India',
-        state: 'Delhi',
-        previousAddress: {
-            prevCountry: 'India',
-            prevState: 'Bombay',
-        },
-    },
+	name: 'Aquib',
+	age: 22,
+	isAlive: true,
+	address: {
+		country: 'India',
+		state: 'Delhi',
+		previousAddress: {
+			prevCountry: 'India',
+			prevState: 'Bombay',
+		},
+	},
 };
 
 const {
@@ -46,7 +46,6 @@ const {
 // console.log(state);
 // console.log('previous address state', prevState);
 
-
 //destructuring inside function
 const data = ({
 	name,
@@ -56,7 +55,7 @@ const data = ({
 		previousAddress: { prevCountry, prevState },
 	},
 }) => {
-    console.log(name, age, country, state, prevCountry, prevState);
+	console.log(name, age, country, state, prevCountry, prevState);
 };
 
 data(userData);
