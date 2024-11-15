@@ -18,4 +18,4 @@ console.log(jsonFormattedData);
 
 const parsedJson = JSON.parse(jsonFormattedData);
 
-console.log("this is reversed data", parsedJson.name);
+console.log("this is reversed data", parsedJson);
