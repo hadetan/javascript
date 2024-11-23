@@ -154,3 +154,22 @@ function sum(...number) {
 }
 
 console.log(sum(1, 2, 3));
+
+
+const countries = [
+	'india',
+	'japan',
+	'america',
+	'japan',
+	'china',
+	'korea',
+	'newzieland',
+	'ireland',
+	'finland',
+];
+
+const filteredCountry = countries.filter((country) => {
+	country = country.includes("r");
+	return country
+})
+console.log(filteredCountry);
